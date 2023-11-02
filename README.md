@@ -67,8 +67,9 @@ asyncio.create_task(tracker_service.track())
 - Save changes and wait for the experiments to be downloaded
 - Do we need to restart the API service?
 - Review `api/tracker.py`
-- Once experiments are dowloaded, tracker.py generate a file called `leaderboard.csv`
+- Once experiments are downloaded, `tracker.py` generates a file called `leaderboard.csv`
 - Review `leaderboard.csv` opening the file using your host OS
+- If we shutdown the `api-service` container can we still access `leaderboard.csv`?
 
 ### Build APIs
 - Open `api/service.py`
@@ -86,7 +87,7 @@ def experiments_fetch():
 ```
 - Test the API by going to `http://localhost:9000/experiments`
 
-- Uncomment the apis `@app.get("/best_model")` and `@app.post("/predict")` to expose APIs
+- Also uncomment the apis `@app.get("/best_model")` and `@app.post("/predict")` to expose other APIs
 
 ### View API Docs
 Fast API gives us an interactive API documentation and exploration tool for free.
