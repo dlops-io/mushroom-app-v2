@@ -124,9 +124,13 @@ Now we have completed the following:
 * Displayed the data in a HTML table
 
 ## Model Serving
-Here we will implement a model serving using:
+Here we will implement model serving using two different techniques:
 - Self hosting our model in FastAPI
 - Utilizing a deployed model on Vertex AI
+
+### Make Predictions
+- Go to `http://localhost:8080/` 
+- Upload an image of a mushroom and view results
 
 ### Review 
 - Open `index.html`
@@ -135,7 +139,7 @@ Here we will implement a model serving using:
 - Review `model.py`
 
 ## Frontend App (React)
-Here we will use the React frontend framework to build a more robust mushroom app. The app will have multiple components and navigation.
+Here we will use the React frontend framework to build a robust mushroom app. The app will have multiple components and navigation.
 
 ### Go into the frontend-react folder 
 - Open a terminal and go to the location where `mushroom-app-v2/frontend-react`
