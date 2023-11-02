@@ -111,5 +111,27 @@ The following tasks is what we will implement:
 - Go to `http://localhost:8080/experiments.html`
 - If your API service is running, the page should show data from all mushroom model experiments
 
+### Review Frontend
+- Open `experiments.html`
+- Review HTML & Javascript code on how APIs are called
+
+Now we have completed the following:
+* We read some data from a csv file in the persistent folder. 
+* Converted the data to list of dictionary objects in **Python** 
+* Exposed the results as a REST API using **FastAPI**
+* Called the API to get the experiments data
+* Displayed the data in a HTML table
+
+## Model Serving
+Here we will implement a model serving using:
+- Self hosting our model in FastAPI
+- Utilizing a deployed model on Vertex AI
+
+### Review 
+- Open `index.html`
+- Review HTML & Javascript code on how model serving is called
+- Review `service.py` and inspect the endpoint `/predict`
+- Review `model.py`
+
 ## Frontend App (React)
 Here we will use the React frontend framework to build a more robust mushroom app. The app will have multiple components and navigation.
