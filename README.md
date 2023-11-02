@@ -135,3 +135,26 @@ Here we will implement a model serving using:
 
 ## Frontend App (React)
 Here we will use the React frontend framework to build a more robust mushroom app. The app will have multiple components and navigation.
+
+### Go into the frontend-react folder 
+- Open a terminal and go to the location where `mushroom-app-v2/frontend-react`
+
+### Build & Run Container
+- Run `sh docker-shell.sh` or `docker-shell.bat` for windows
+
+
+### Start Web Server
+- Run `yarn start` from the docker shell
+- Go to `http://localhost:3000`
+
+
+---
+---
+
+## Docker Cleanup
+
+### Make sure we do not have any running containers and clear up an unused images
+* Run `docker container ls`
+* Stop any container that is running
+* Run `docker system prune`
+* Run `docker image ls`
