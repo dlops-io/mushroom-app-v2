@@ -17,7 +17,7 @@ The following container architecture is what we will implement:
 In this tutorial we will setup containers to run python code for creating APIs and a container to run HTML web server.
 
 ### Clone the github repository
-- Clone or download from [here](https://github.com/dlops-io/mushroom-app-v1)
+- Clone or download from [here](https://github.com/dlops-io/mushroom-app-v2)
 
 ### Create a local **secrets** folder
 
@@ -33,3 +33,12 @@ Your folder structure should look like this:
    |-secrets
    |-persistent-folder
 ```
+
+## Backend APIs
+We will build REST APIs for the mushroom app. FastAPI framework will be used to implement REST APIs.
+
+## Frontend App (Simple)
+We will build a simple frontend app that uses basic HTML & Javascript. We will consume the REST APIs exposed by the api service container
+
+## Frontend App (React)
+Here we will use the React frontend framework to build a more robust mushroom app. The app will have multiple components and navigation.
