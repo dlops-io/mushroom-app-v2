@@ -5,8 +5,6 @@ In this tutorial we will setup three containers:
 * frontend-simple
 * frontend-react
 
-The following container architecture is what we will implement:
-<img src="images/container-architecture.png"  width="800">
 
 ## Prerequisites
 * Have Docker installed
@@ -36,6 +34,9 @@ Your folder structure should look like this:
 
 ## Backend APIs
 We will create a basic backend container to run our REST API. The FastAPI framework will be used for this.
+
+The following tasks is what we will implement:
+<img src="images/container-architecture-1.png"  width="800">
 
 ### Go into the api-service folder 
 - Open a terminal and go to the location where `mushroom-app-v2/api-service`
@@ -94,6 +95,21 @@ Fast API gives us an interactive API documentation and exploration tool for free
 
 ## Frontend App (Simple)
 We will build a simple frontend app that uses basic HTML & Javascript. We will consume the REST APIs exposed by the api service container
+
+The following tasks is what we will implement:
+<img src="images/container-architecture-2.png"  width="800">
+
+### Go into the frontend-simple folder 
+- Open a terminal and go to the location where `mushroom-app-v2/frontend-simple`
+
+### Build & Run Container
+- Run `sh docker-shell.sh` or `docker-shell.bat` for windows
+
+
+### Start Web Server
+- To run development web server run `http-server` from the docker shell
+- Go to `http://localhost:8080/experiments.html`
+- If your API service is running, the page should show data from all mushroom model experiments
 
 ## Frontend App (React)
 Here we will use the React frontend framework to build a more robust mushroom app. The app will have multiple components and navigation.
