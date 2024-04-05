@@ -19,11 +19,11 @@ In this tutorial we will setup containers to run python code for creating APIs a
 
 ### Create a local **secrets** folder
 
-It is important to note that we do not want any secure information in Git. So we will manage these files outside of the git folder. At the same level as the `mushroom-app-v1` folder create a folder called **secrets**
+It is important to note that we do not want any secure information in Git. So we will manage these files outside of the git folder. At the same level as the `mushroom-app-v2` folder create a folder called **secrets**
 
 Your folder structure should look like this:
 ```
-   |-mushroom-app-v1
+   |-mushroom-app-v2
      |-images
      |-src
        |---api-service
